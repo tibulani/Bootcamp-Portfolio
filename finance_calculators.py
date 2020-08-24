@@ -1,17 +1,17 @@
-#This is an example Python program called finance_calculator.
-#Create a program that will to calculate the amount of interest you'll earn on interest on investment and repayment amount on home loan
+#This is a Python program called finance_calculator.
+#this program calculate the amount of interest one will earn on investment and repayment amount on home loan
 #the user will supply amount, duration and interest rate 
 
 import math 
 
-financial_product = input("""Choose either investment or bond from the manu below to proceed:
+financial_products = input("""Choose either investment or bond from the manu below to proceed:
 
 investment   - to calculate the amount of interest you'll earn on interest
 bond         - to calculate the amount you'll pay on a home loan
 \n""").lower()
 #calculate the amount of interest you'll earn on interest on investment
 
-if  financial_product == "investment":
+if  financial_products == "investment":
     deposit = float(input("Enter the deposit amount:\n"))
     interest_rate = float(input("Enter annual interest rate:\n"))
     years = int(input("Enter number of years:\n"))
